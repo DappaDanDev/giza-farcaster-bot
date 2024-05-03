@@ -1,0 +1,34 @@
+query MyQuery($_eq: Identity, $_eq1: SocialDappName, $blockchain: EveryBlockchain!, $limit: Int, $_eq2: Identity, $_eq3: SocialDappName, $blockchain1: EveryBlockchain!, $limit1: Int) {
+  SocialFollowers(
+    input: {filter: {identity: {_eq: $_eq}, dappName: {_eq: $_eq1}}, blockchain: $blockchain, limit: $limit}
+  ) {
+    Follower {
+      dappName
+      followerProfileId
+      followerAddress {
+        addresses
+        socials {
+          profileName
+          profileBio
+          isFarcasterPowerUser
+        }
+      }
+    }
+  }
+  SocialFollowings(
+    input: {filter: {identity: {_eq: $_eq2}, dappName: {_eq: $_eq3}}, blockchain: $blockchain1, limit: $limit1}
+  ) {
+    Following {
+      dappName
+      followingProfileId
+      followingAddress {
+        addresses
+        socials {
+          profileName
+          profileBio
+          isFarcasterPowerUser
+        }
+      }
+    }
+  }
+}

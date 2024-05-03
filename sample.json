@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "object": "user",
+      "fid": 360806,
+      "custody_address": "0x79eee75978dfae1cd36244a6a49512c35c947590",
+      "username": "fdegen",
+      "display_name": "fardegen",
+      "pfp_url": "https://i.imgur.com/ujrgXmS.jpg",
+      "profile": { "bio": { "text": "fardegen", "mentioned_profiles": [] } },
+      "follower_count": 16,
+      "following_count": 132,
+      "verifications": ["0x79eee75978dfae1cd36244a6a49512c35c947590"],
+      "verified_addresses": {
+        "eth_addresses": ["0x79eee75978dfae1cd36244a6a49512c35c947590"],
+        "sol_addresses": ["ViMNB9LpjxzRWh5Uc4mVHhERBNBVLyd3ECfmHUSg4yb"]
+      },
+      "active_status": "inactive",
+      "power_badge": false
+    }
+  ]
+}
