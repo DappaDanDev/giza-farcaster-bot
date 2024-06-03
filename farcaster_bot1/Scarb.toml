@@ -1,0 +1,6 @@
+[package]
+name = "farcaster_bot"
+version = "0.1.0"
+
+[cairo]
+enable-gas = false
